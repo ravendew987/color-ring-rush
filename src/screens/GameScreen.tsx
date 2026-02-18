@@ -8,8 +8,7 @@ export default function GameScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: "#000" }}>
       <Canvas style={{ flex: 1 }}>
-        {/* Test Ball */}
-        <Circle cx={width / 2} cy={height / 2} r={20} color="cyan" />
+        <Circle cx={width / 2} cy={height / 2} r={22} color="cyan" />
       </Canvas>
     </View>
   );

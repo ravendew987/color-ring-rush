@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from "react-native";
 export default function SplashScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>COLOR RING RUSH</Text>
-      <Text style={styles.subtitle}>Ultra Vertical Climb</Text>
+      <Text style={styles.brand}>COLOR RING RUSH</Text>
+      <Text style={styles.tag}>Play. Tap. Climb.</Text>
     </View>
   );
 }
@@ -13,18 +13,20 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0A0A0F",
-    justifyContent: "center",
+    backgroundColor: "#07070B",
     alignItems: "center",
+    justifyContent: "center",
   },
-  title: {
+  brand: {
     color: "#FFFFFF",
-    fontSize: 32,
-    fontWeight: "bold",
+    fontSize: 30,
+    fontWeight: "900",
+    letterSpacing: 2,
   },
-  subtitle: {
+  tag: {
     marginTop: 10,
-    color: "#888",
-    fontSize: 14,
+    color: "rgba(255,255,255,0.65)",
+    fontSize: 13,
+    letterSpacing: 1,
   },
 });

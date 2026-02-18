@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { View, StatusBar } from "react-native";
 import SplashScreen from "./src/screens/SplashScreen";
 import GameScreen from "./src/screens/GameScreen";
 
 export default function App() {
-  const [isReady, setIsReady] = useState(false);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsReady(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
+    const t = setTimeout(() => setReady(true), 1200);
+    return () => clearTimeout(t);
   }, []);
 
   return (
     <View style={{ flex: 1 }}>
       <StatusBar hidden />
-      {isReady ? <GameScreen /> : <SplashScreen />}
+      {ready ? <GameScreen /> : <SplashScreen />}
     </View>
   );
 }

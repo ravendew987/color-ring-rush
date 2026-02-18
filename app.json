@@ -16,7 +16,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.bitlynus.colorringrush",
+      "package": "com.ravendewdev.colorringrush",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -29,8 +29,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "2b16cea1-46a5-4a9b-a762-9a9f888e24f0"
+        "projectId": "ab4b6237-5f4c-4968-92b8-5d2918e67382"
       }
-    }
+    },
+    "owner": "ravendewdev"
   }
 }
